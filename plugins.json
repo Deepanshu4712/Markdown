@@ -1,0 +1,23 @@
+{
+  "sf_agents": [
+    {
+      "plugin_name": "apache",
+      "display_name": "Apache"
+    },
+    {
+      "plugin_name": "nginx",
+      "display_name": "Nginx"
+    },
+    {
+      "plugin_name": "elasticsearch",
+      "display_name": "Elasticsearch"
+    },
+    {
+      "plugin_name": "kubernetes",
+      "display_name": "Kubernetes"
+    }
+
+  ],
+  "sf_pollers": [],
+  "kubernetes": []
+}
