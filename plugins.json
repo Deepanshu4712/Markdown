@@ -15,6 +15,10 @@
     {
       "plugin_name": "kubernetes",
       "display_name": "Kubernetes"
+    },
+	 {
+      "plugin_name": "mysql",
+      "display_name": "MySQL"
     }
 
   ],
