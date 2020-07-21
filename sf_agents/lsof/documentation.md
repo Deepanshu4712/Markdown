@@ -2,7 +2,7 @@
 
 ### Description
 
-LSOF (list of open files) plugin captures the open files in the running Linux distribution. This plugin returns the list of files opened based on the file descriptor.
+LSOF (list of open files) plugin capture the open files in the running Linux distribution. This plugin returns the list of files opened based on the file descriptor.
 
 ### Prerequisites
 
@@ -69,3 +69,5 @@ Use LSOF dashboard for analysis.
 
 - Summary stats documents are present with document Type “lsofSummary”. Summary stats are displayed under “Summary” pane on LSOF dashboard.
 - Complete stats documents are with document Type “lsofStats”. *Open Files* pane shows the number of files opened by each process. This can be filtered based on the file type using the *sort by* dropdown. Likewise, *Process Details*  pane show stats per process.
+
+For help with plugins, please reach out to support@snappyflow.io.
