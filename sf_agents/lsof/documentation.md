@@ -33,6 +33,7 @@ lsof -v
 Note: version may vary depending upon the Linux distribution.
 
 ###  Configuration Settings
+Add the plugin configuration in config.yaml file under /opt/sfagent/ directory as follows to enable this plugin
 
 ```yaml
 -  name: lsof
@@ -43,7 +44,6 @@ Note: version may vary depending upon the Linux distribution.
      numProcess: 5
      sortFilter: DIR
 ```
-
 
 
 ### Operating Instructions
