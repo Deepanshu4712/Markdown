@@ -49,14 +49,18 @@ Note: version may vary depending upon the Linux distribution.
 Add the plugin configuration in config.yaml file under /opt/sfagent/ directory as follows to enable this plugin
 
 <div class="sfpollerExample">
-- name: lsof
-  enabled: true
-  interval: 600
-  config:
-    completeStats: false
-    numProcess: 5
-    sortFilter: DIR
-<div>
+    <div class="innerLeft">
+         <div> - name: lsof </div>
+        <div> enabled: true </div>
+        <div> interval: 600 </div>
+    </div>
+<div> config:</div>
+ <div class="innerLeft">
+    <div> completeStats: false </div>
+    <div> numProcess: 5 </div>
+    <div> sortFilter: DIR </div>
+    </div>
+</div>
 
 
 ##### Operating Instructions
@@ -85,7 +89,7 @@ Use LSOF dashboard for analysis.
 
 ##### Further reading
 
-[Linux](../linux/documentation.md), [psutil](../psutil/documentation.md) and [netstat](../netstat/documentation.md) for other linux related monitoring.
+Linux, psutil and netstat for other linux related monitoring.
 
 
 
