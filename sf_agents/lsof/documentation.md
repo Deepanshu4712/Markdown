@@ -89,7 +89,7 @@ Use LSOF dashboard for analysis.
 
 ##### Further Reading
 
-[Linux](../linux/documentation.md), [psutil](../psutil/documentation.md) and [netstat](../netstat/documentation.md) for other linux related monitoring.
+[Linux](../linux/documentation.md), [Psutil](../psutil/documentation.md) and [Netstat](../netstat/documentation.md) for other linux related monitoring.
 
 
 
