@@ -1,10 +1,10 @@
-# LSOF
+##### LSOF
 
-### Description
+##### Description
 
-LSOF (list of open files) plugin captures the open files in the running Linux distribution. This plugin returns the list of files opened based on the file descriptor.
+LSOF (list of open files) plugin capture the open files in the running Linux distribution. This plugin returns the list of files opened based on the file descriptor.
 
-### Prerequisites
+##### Prerequisites
 
 *lsof* command needs to be installed before running this plugin.
 
@@ -28,32 +28,45 @@ lsof -v
 
  Expected output:
 
-![lsofcheck](images/lsofcheck.PNG)
+```
+lsof version information:
+    revision: 4.87
+    latest revision: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/
+    latest FAQ: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/FAQ
+    latest man page: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/lsof_man
+    constructed: Tue Oct 30 16:28:19 UTC 2018
+    constructed by and on: mockbuild@x86-01.bsys.centos.org
+    compiler: cc
+    compiler version: 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC)
+    compiler flags: -DLINUXV=310000 -DGLIBCV=217 -DHASIPv6 -DHASSELINUX -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -DHAS_STRFTIME -DLSOF_VSTR="3.10.0" -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic
+    loader flags: -L./lib -llsof  -lselinux
+    system info: Linux x86-01.bsys.centos.org 3.10.0-693.17.1.el7.x86_64 #1 SMP Thu Jan 25 20:13:58 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+```
 
 Note: version may vary depending upon the Linux distribution.
 
-###  Configuration Settings
+#####  Configuration Settings
+Add the plugin configuration in config.yaml file under /opt/sfagent/ directory as follows to enable this plugin
 
-```yaml
--  name: lsof
-   enabled: true
-   interval: 600
-   config:
-     completeStats: false
-     numProcess: 5
-     sortFilter: DIR
-```
+<div class="sfpollerExample">
+- name: lsof
+  enabled: true
+  interval: 600
+  config:
+    completeStats: false
+    numProcess: 5
+    sortFilter: DIR
+<div>
 
 
-
-### Operating Instructions
+##### Operating Instructions
 
 This plugin can run in two different modes: *summary* and *complete stats*.
 
 - In *summary* mode, it returns only the count of files open of each file descriptor type (like DIR, CHR, REG etc.) and the files open, in total.
 - In *complete stats* mode, it returns the entire list of open files in the machine, process wise along with the process id.
 
-##### Configuring parameters
+###### Configuring parameters
 
 *completeStats*: Since the list of all opened files can be huge in number, plugin is by default configured in summary mode (i.e. *completeStats: false*) . To enable complete stats, set “*completeStats: true*” in plugin configuration. 
 
@@ -63,9 +76,18 @@ This plugin can run in two different modes: *summary* and *complete stats*.
 
 Note: All the traffic related (IPv4, IPv6) file types are combined as *IPv4/6* and unix, sockets into *socket* for better analysis.
 
-### Metric Documents
+##### Metric Documents
 
 Use LSOF dashboard for analysis.
 
 - Summary stats documents are present with document Type “lsofSummary”. Summary stats are displayed under “Summary” pane on LSOF dashboard.
 - Complete stats documents are with document Type “lsofStats”. *Open Files* pane shows the number of files opened by each process. This can be filtered based on the file type using the *sort by* dropdown. Likewise, *Process Details*  pane show stats per process.
+
+##### Further reading
+
+[Linux](../linux/documentation.md), [psutil](../psutil/documentation.md) and [netstat](../netstat/documentation.md) for other linux related monitoring.
+
+
+
+For help with plugins, please reach out to support@snappyflow.io.
+
