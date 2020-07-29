@@ -4,7 +4,7 @@
 
 LSOF (list of open files) plugin capture the open files in the running Linux distribution. This plugin returns the list of files opened based on the file descriptor.
 
-##### Prerequisites
+##### Pre-requisites
 
 *lsof* command needs to be installed before running this plugin.
 
@@ -87,9 +87,9 @@ Use LSOF dashboard for analysis.
 - Summary stats documents are present with document Type “lsofSummary”. Summary stats are displayed under “Summary” pane on LSOF dashboard.
 - Complete stats documents are with document Type “lsofStats”. *Open Files* pane shows the number of files opened by each process. This can be filtered based on the file type using the *sort by* dropdown. Likewise, *Process Details*  pane show stats per process.
 
-##### Further reading
+##### Further Reading
 
-[Linux](../linux/documentation.md), [psutil](../psutil/documentation.md) and [netstat](../netstat/documentation.md) for other linux related monitoring.
+[Linux](../linux/documentation.md), [Psutil](../psutil/documentation.md) and [Netstat](../netstat/documentation.md) for other linux related monitoring.
 
 
 
