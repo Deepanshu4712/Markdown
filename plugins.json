@@ -23,7 +23,12 @@
 	 {
       "plugin_name": "mysql",
       "display_name": "MySQL"
+    },
+	 {
+      "plugin_name": "tomcat",
+      "display_name": "Tomcat"
     }
+
 
   ],
   "sf_pollers": [],
