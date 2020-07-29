@@ -12,7 +12,7 @@ Tomcat plugin monitor Tomcat server by collecting multiple types of metrics like
  -Dcom.sun.management.jmxremote
 ```
 
-- JCMD command installed in the machine
+- JCMD command must be installed in the machine
 
 ##### Configuration Settings
 
@@ -48,7 +48,7 @@ It consists of four document types:
 - Context stats: contain tomcat context related metrics like hit count, lookup count etc.
 - JVM stats: contain all JVM related metrics used by tomcat server like garbage collection details, memory pools, loaded/unloaded classes etc.
 
-
+------
 
 ##### Tomcat Logger
 
