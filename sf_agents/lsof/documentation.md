@@ -2,7 +2,7 @@
 
 ##### Description
 
-LSOF (list of open files) plugin capture the open files in the running Linux distribution. This plugin returns the list of files opened based on the file descriptor.
+LSOF (list open files) plugin capture the open files in the running Linux distribution. This plugin returns the list of files opened based on the file descriptor.
 
 ##### Prerequisites
 
