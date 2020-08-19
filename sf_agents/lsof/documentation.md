@@ -84,7 +84,7 @@ Note: All the traffic related (IPv4, IPv6) file types are combined as *IPv4/6* a
 
 Use LSOF dashboard for analysis.
 
-- Summary stats documents are present with document Type “lsofSummary”. Summary stats are displayed under “Summary” pane on LSOF dashboard.
+- Summary stats documents are present with document Type “lsofSummary”. Summary stats are displayed under *Summary pane* on LSOF dashboard.
 - Complete stats documents are with document Type “lsofStats”. *Open Files* pane shows the number of files opened by each process. This can be filtered based on the file type using the *sort by* dropdown. Likewise, *Process Details*  pane show stats per process.
 
 ##### Further reading
